@@ -8,17 +8,24 @@
   </head>
   <body>
     <header>
-      <h1 id="header-title">The Dev News</h1>
+      <div id="container-header">
+        <h1 id="header-title">The Dev News</h1>
+      </div>
     </header>
-    <div id="container-body">
-      <main>
-        <section id="post-main">
-          <div id="post-main-gradient">
-            <span>opinião</span>
-            <h2>Como é ser um desenvolvedor</h2>
-            <p id="post-main-author-text"><strong>By </strong>Fabio Tetsuo</p>
-          </div>
+    <main>
+      <div>
+        <!-- Main Post -->
+        <section id="main-post">
+          <article id="main-post-article">
+            <img src="./imgs/newsMain.jpg" alt="Night City" />
+            <div id="main-post-content">
+              <span id="category">opinião</span>
+              <h2>Como é ser um desenvolvedor</h2>
+              <p>By Fábio Tetsuo</p>
+            </div>
+          </article>
         </section>
+        <!-- Recent Posts -->
         <section id="recent-posts">
           <div id="recent-posts-header">
             <h3 class="title-sections">Posts mais recentes</h3>
@@ -108,11 +115,13 @@
             </div>
           </div>
         </section>
-      </main>
+      </div>
+      <!-- Sidebar -->
       <aside>
+        <!-- Popular posts -->
         <section id="popular-posts">
           <div id="popular-posts-header">
-            <h3 class="title-sections">Posts populares</h3>
+            <h3 class="titles-sections-sidebar">Posts populares</h3>
           </div>
           <div class="card-popular-container">
             <div class="card-popular-content-img">
@@ -156,29 +165,35 @@
         </section>
         <section id="categories">
           <div id="categories-header">
-            <h3 class="title-sections">Categorias</h3>
+            <h3 class="titles-sections-sidebar">Categorias</h3>
           </div>
           <div class="card-categories-container">
-            <p class="categories-text">> saude</p>
-            <p class="categories-text">(1)</p>
+            <p class="categories-text">></p>
+            <span class="button-categories">saude</span>
+            <p class="categories-text2">(1)</p>
           </div>
           <div class="card-categories-container">
-            <p class="categories-text">> desenvolvimento</p>
-            <p class="categories-text">(2)</p>
+            <p class="categories-text">></p>
+            <span class="button-categories">desenvolvimento</span>
+            <p class="categories-text2">(2)</p>
           </div>
           <div class="card-categories-container">
-            <p class="categories-text">> produtividade</p>
-            <p class="categories-text">(2)</p>
+            <p class="categories-text">></p>
+            <span class="button-categories">produtividade</span>
+            <p class="categories-text2">(2)</p>
           </div>
           <div class="card-categories-container">
-            <p class="categories-text">> opiniao</p>
-            <p class="categories-text">(1)</p>
+            <p class="categories-text">></p>
+            <span class="button-categories">opiniao</span>
+            <p class="categories-text2">(1)</p>
           </div>
         </section>
       </aside>
-    </div>
+    </main>
     <footer>
-      <p>Copyright@The Dev News</p>
+      <div id="container-footer">
+        <p>Copyright@The Dev News</p>
+      </div>
     </footer>
   </body>
 </html>
